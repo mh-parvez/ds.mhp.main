@@ -1,0 +1,40 @@
+
+/**************** | Default CSS Variables | ***************
+ * ! Default CSS Variables
+ * As scss is not fully compatible with CSS, We need embed this variable.
+*/
+
+:root {
+    --mhp-body-text-color: #{$dark};
+    --mhp-body-bg-color: #{$white};
+
+    --mhp-btn-primary-color: #{$white};
+    --mhp-btn-primary-bg: #{$green};
+    --mhp-btn-primary-bg-hover: #{$green-light};
+
+    --mhp-btn-secondary-color: #{$white};
+    --mhp-btn-secondary-bg: #{$dark};
+
+    --mhp-form-color: #{$dark};
+    --mhp-form-bg: #{$white};
+    --mhp-form-error-color: #{$red};
+    --mhp-form-error-border: #{$red};
+    --mhp-form-border-focus-color: #{$green};
+
+    --mhp-body-font-size: #{$fs-base};
+    --mhp-body-font-weight: #{$fw-normal};
+
+    --mhp-h1-font-size: #{$h-1};
+    --mhp-h2-font-size: #{$h-2};
+    --mhp-h3-font-size: #{$h-3};
+    --mhp-h4-font-size: #{$h-4};
+    --mhp-h5-font-size: #{$h-5};
+    --mhp-h6-font-size: #{$h-6};
+
+    --mhp-h1-font-weight: #{$fw-medium};
+    --mhp-h2-font-weight: #{$fw-medium};
+    --mhp-h3-font-weight: #{$fw-medium};
+    --mhp-h4-font-weight: #{$fw-normal};
+    --mhp-h5-font-weight: #{$fw-normal};
+    --mhp-h6-font-weight: #{$fw-light};
+}

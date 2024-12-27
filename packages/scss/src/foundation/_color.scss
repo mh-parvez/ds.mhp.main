@@ -1,0 +1,38 @@
+
+/********************* | Colors | ********************/
+/*
+ * This file defines the actual colors that will be used for styling. They will default to the palette
+ * we defined in the _variable.scss file. This is our default palette, and devs can override this with their own variables.
+
+ * Defining a SCSS Variable: [Instructions]
+ * 1. define a name
+ * 2. value of the variable will be a css var, so the consumer of the design system won't have to use scss
+ * 3. default value will be a scss variable that we declared previously
+ * 4. added !default flag so consumer of the design system can override the scss variable 
+ * 5. the --mhp prefix of the variable name is a namespace (project name)
+ * [mhp - mehedi hasan parvez]
+*/
+
+
+/* ============== Global text colors ============== */
+$body-text-color: var(--mhp-body-text-color, $dark) !default;
+$body-bg-color: var(--mhp-body-bg-color, $white) !default;
+
+
+/* ============== Buttons ============== */
+$btn-primary-color: var(--mhp-btn-primary-color, $white) !default;
+$btn-primary-bg-color: var(--mhp-btn-primary-bg-color, $green) !default;
+$btn-primary-bg-hover: var(--mhp-btn-primary-bg-hover, $green-light) !default;
+
+
+/* ============== Forms ============== */
+$form-border-color: var(--mhp-form-border-color, $white-dark) !default;
+$form-bg-color: var(--mhp-form-bg-color, $white) !default;
+$form-bg-option-selected: var(--mhp-form-bg-option-selected, $green) !default;
+$form-color-option-selected: var(--mhp-form-color-option-selected, $white) !default;
+$form-bg-color-hover: var(--mhp-form-bg-color-hover, $white-dark) !default;
+$form-color: var(--mhp-form-color, $dark) !default;
+$form-bg: var(--mhp-form-bg, $white) !default;
+$form-error-color: var(--mhp-form-error-color, $red) !default;
+$form-error-border: var(--mhp-form-error-border, $red) !default;
+$form-border-focus-color: var(--mhp-form-border-focus-color, $green) !default;

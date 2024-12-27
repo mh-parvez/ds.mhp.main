@@ -1,0 +1,257 @@
+/********************* | ALL VARIABALES  ********************/
+/**
+ * TABLE OF CONTENTS
+ * 
+ * COLORS: 
+ * Brand colors...................These are the main brand colors. They will be used the most
+ * Neutral colors.................White and black, gray scale, secondary colors.
+ * Utility colors.................Other colors to represent states: info, warning, success, etc.
+ * 
+ * TYPOGRAPHY: 
+ * Font families..................The fonts used in the design system.
+ * Font weights...................Font weights
+ * Sizes..........................Font sizing for body text, paragraphs, inputs
+ * Heading sizes..................Font sizing for page headings
+ *
+ * BREAKPOINTS: 
+ * Breakpoints....................Global responsive breakpoints definitions.
+ *
+ * SPACING: 
+ * Spacing........................Global fixed set of spacing variables
+ * 
+ * SHADOW: 
+ * Shadows........................Global fixed set of shadows
+ */
+/* ============== Colors ============== */
+/* Brand Color */
+/* Neutral Colors */
+/* Utility Colors */
+/* ============== Typography ============== */
+/* Font Families */
+/* Font Sizes */
+/* Heading Font Sizes */
+/* Font Weights */
+/* ============== Breakpoints ============== */
+/* ============== Spacing ============== */
+/* ============== Shadows ============== */
+/********************* | Colors | ********************/
+/*
+ * This file defines the actual colors that will be used for styling. They will default to the palette
+ * we defined in the _variable.scss file. This is our default palette, and devs can override this with their own variables.
+
+ * Defining a SCSS Variable: [Instructions]
+ * 1. define a name
+ * 2. value of the variable will be a css var, so the consumer of the design system won't have to use scss
+ * 3. default value will be a scss variable that we declared previously
+ * 4. added !default flag so consumer of the design system can override the scss variable 
+ * 5. the --mhp prefix of the variable name is a namespace (project name)
+ * [mhp - mehedi hasan parvez]
+*/
+/* ============== Global text colors ============== */
+/* ============== Buttons ============== */
+/* ============== Forms ============== */
+/********************* | Typography | ********************/
+/* ============== Body font family ============== */
+/* ============== Body font sizes ============== */
+/* ============== Heading font sizes ============== */
+/* ============== Head font weights ============== */
+/********************* | Mixins | ********************/
+.mhp-margin-none {
+  margin: 0;
+}
+
+.mhp-margin-left-none {
+  margin-left: 0;
+}
+
+.mhp-margin-right-none {
+  margin-right: 0;
+}
+
+.mhp-margin-top-none {
+  margin-top: 0;
+}
+
+.mhp-margin-bottom-none {
+  margin-bottom: 0;
+}
+
+.mhp-margin-xxxs {
+  margin: 0.25rem;
+}
+
+.mhp-margin-left-xxxs {
+  margin-left: 0.25rem;
+}
+
+.mhp-margin-right-xxxs {
+  margin-right: 0.25rem;
+}
+
+.mhp-margin-top-xxxs {
+  margin-top: 0.25rem;
+}
+
+.mhp-margin-bottom-xxxs {
+  margin-bottom: 0.25rem;
+}
+
+.mhp-margin-xxs {
+  margin: 0.5rem;
+}
+
+.mhp-margin-left-xxs {
+  margin-left: 0.5rem;
+}
+
+.mhp-margin-right-xxs {
+  margin-right: 0.5rem;
+}
+
+.mhp-margin-top-xxs {
+  margin-top: 0.5rem;
+}
+
+.mhp-margin-bottom-xxs {
+  margin-bottom: 0.5rem;
+}
+
+.mhp-margin-xs {
+  margin: 0.75rem;
+}
+
+.mhp-margin-left-xs {
+  margin-left: 0.75rem;
+}
+
+.mhp-margin-right-xs {
+  margin-right: 0.75rem;
+}
+
+.mhp-margin-top-xs {
+  margin-top: 0.75rem;
+}
+
+.mhp-margin-bottom-xs {
+  margin-bottom: 0.75rem;
+}
+
+.mhp-margin-sm {
+  margin: 1rem;
+}
+
+.mhp-margin-left-sm {
+  margin-left: 1rem;
+}
+
+.mhp-margin-right-sm {
+  margin-right: 1rem;
+}
+
+.mhp-margin-top-sm {
+  margin-top: 1rem;
+}
+
+.mhp-margin-bottom-sm {
+  margin-bottom: 1rem;
+}
+
+.mhp-margin-md {
+  margin: 1.5rem;
+}
+
+.mhp-margin-left-md {
+  margin-left: 1.5rem;
+}
+
+.mhp-margin-right-md {
+  margin-right: 1.5rem;
+}
+
+.mhp-margin-top-md {
+  margin-top: 1.5rem;
+}
+
+.mhp-margin-bottom-md {
+  margin-bottom: 1.5rem;
+}
+
+.mhp-margin-lg {
+  margin: 2rem;
+}
+
+.mhp-margin-left-lg {
+  margin-left: 2rem;
+}
+
+.mhp-margin-right-lg {
+  margin-right: 2rem;
+}
+
+.mhp-margin-top-lg {
+  margin-top: 2rem;
+}
+
+.mhp-margin-bottom-lg {
+  margin-bottom: 2rem;
+}
+
+.mhp-margin-xl {
+  margin: 3rem;
+}
+
+.mhp-margin-left-xl {
+  margin-left: 3rem;
+}
+
+.mhp-margin-right-xl {
+  margin-right: 3rem;
+}
+
+.mhp-margin-top-xl {
+  margin-top: 3rem;
+}
+
+.mhp-margin-bottom-xl {
+  margin-bottom: 3rem;
+}
+
+.mhp-margin-xxl {
+  margin: 4.5rem;
+}
+
+.mhp-margin-left-xxl {
+  margin-left: 4.5rem;
+}
+
+.mhp-margin-right-xxl {
+  margin-right: 4.5rem;
+}
+
+.mhp-margin-top-xxl {
+  margin-top: 4.5rem;
+}
+
+.mhp-margin-bottom-xxl {
+  margin-bottom: 4.5rem;
+}
+
+.mhp-margin-xxxl {
+  margin: 6rem;
+}
+
+.mhp-margin-left-xxxl {
+  margin-left: 6rem;
+}
+
+.mhp-margin-right-xxxl {
+  margin-right: 6rem;
+}
+
+.mhp-margin-top-xxxl {
+  margin-top: 6rem;
+}
+
+.mhp-margin-bottom-xxxl {
+  margin-bottom: 6rem;
+}
