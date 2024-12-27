@@ -11,7 +11,8 @@
 		"typescript": "^5.7.2"
 	},
 	"scripts": {
-		"build": "rollup -c"
+		"build": "rollup -c",
+		"dev": "yarn build --watch"
 	},
 	"dependencies": {
 		"@ds.mhp/scss": "1.0.0"

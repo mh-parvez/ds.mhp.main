@@ -70,6 +70,6 @@
 }
 
 .btn:hover {
-  background-color: var(--mhp-btn-primary-bg-hover, #28d37e);
+  background-color: var(--mhp-btn-primary-bg-hover, red);
   color: black;
 }

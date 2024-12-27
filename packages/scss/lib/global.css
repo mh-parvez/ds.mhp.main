@@ -306,7 +306,7 @@ input[type=checkbox], input[type=radio] {
   --mhp-body-bg-color: #fff;
   --mhp-btn-primary-color: #fff;
   --mhp-btn-primary-bg: #00a396;
-  --mhp-btn-primary-bg-hover: #28d37e;
+  --mhp-btn-primary-bg-hover: red;
   --mhp-btn-secondary-color: #fff;
   --mhp-btn-secondary-bg: #1d1f22;
   --mhp-form-color: #1d1f22;
