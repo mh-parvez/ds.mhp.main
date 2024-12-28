@@ -1,0 +1,14 @@
+@import '../foundation/all';
+
+.mhp-text {
+    margin: 0;
+    font-family: $body-font-family;
+    color: $body-text-color;
+}
+
+@each $size, $value in $fs {
+
+    .mhp-text-#{$size} {
+        font-size: $value;
+    }
+}

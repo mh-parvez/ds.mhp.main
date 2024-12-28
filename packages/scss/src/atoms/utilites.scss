@@ -1,0 +1,14 @@
+@import '../foundation/all';
+
+/* Creating utilties classes e.g: mhp-width-lg, mhp-width-sm */
+
+@each $size, $value in $spacing {
+    .mhp-width-#{$size} {
+        width: $value;
+    }
+
+    .mhp-height-#{$size} {
+        height: $value;
+    }
+}
+
