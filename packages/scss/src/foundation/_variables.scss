@@ -29,8 +29,8 @@
 
 /* Brand Color */
 
-$green: #00a396;
-$green-light: red;
+$green: seagreen;
+$green-light: rgba(46, 139, 86, 0.87);
 
 $dark: #1d1f22;
 $dark-light: #737680;
@@ -58,6 +58,8 @@ $blue-light: #b4d2f4;
 
 // 1. The playfair font. We'll use this for headings mostly. https://fonts.google.com/specimen/Playfair+Display
 // 2. The raleway font. We'll use this for the body text. https://fonts.google.com/specimen/Raleway
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 $playfair: 'Playfair Display', serif; // 1
 $raleway: 'Raleway', 'HelveticaNeue', 'Helvetica', sans-serif; // 2

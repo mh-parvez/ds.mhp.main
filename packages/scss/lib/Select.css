@@ -57,8 +57,57 @@
 /* ============== Heading font sizes ============== */
 /* ============== Head font weights ============== */
 /********************* | Mixins | ********************/
-.mhp-panel__container {
-  background-color: #f1f2f3;
+.mhp-select {
   display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.mhp-select__label {
+  align-items: center;
+  background-color: var(--mhp-form-bg-color, #fff);
+  border: 1px solid var(--mhp-form-border-color, #f1f2f3);
+  font-family: var(--mhp-body-font-family, "Playfair Display", serif);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.mhp-select__caret {
+  transition: all 250ms ease;
+}
+.mhp-select__caret--open {
+  transform: rotate(180deg);
+}
+.mhp-select__caret--close {
+  transform: rotate(0deg);
+}
+.mhp-select__overlay {
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 11px rgba(157, 157, 157, 0.21);
+  list-style-type: none;
+  background-color: var(--mhp-form-bg-color, #fff);
+  border: 1px solid var(--mhp-form-border-color, #f1f2f3);
+  width: 100%;
+  z-index: 99;
   position: absolute;
+}
+.mhp-select__option {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mhp-select__option:hover {
+  background-color: var(--mhp-form-bg-color-hover, #f1f2f3);
+}
+.mhp-select__option--selected {
+  background-color: var(--mhp-form-bg-option-selected, seagreen);
+  color: var(--mhp-form-color-option-selected, #fff);
+}
+.mhp-select__option--selected:hover {
+  background-color: var(--mhp-form-bg-option-selected, seagreen);
 }

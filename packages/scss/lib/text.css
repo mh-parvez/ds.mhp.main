@@ -28,6 +28,7 @@
 /* Utility Colors */
 /* ============== Typography ============== */
 /* Font Families */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /* Font Sizes */
 /* Heading Font Sizes */
 /* Font Weights */
@@ -59,7 +60,7 @@
 .mhp-text {
   margin: 0;
   font-family: var(--mhp-body-font-family, "Playfair Display", serif);
-  color: var(--mhp-body-text-color, #f1f2f3);
+  color: var(--mhp-body-text-color, #1d1f22);
 }
 
 .mhp-text-xs {

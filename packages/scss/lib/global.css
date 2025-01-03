@@ -31,6 +31,7 @@
 /* Utility Colors */
 /* ============== Typography ============== */
 /* Font Families */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /* Font Sizes */
 /* Heading Font Sizes */
 /* Font Weights */
@@ -305,15 +306,15 @@ input[type=checkbox], input[type=radio] {
   --mhp-body-text-color: #1d1f22;
   --mhp-body-bg-color: #fff;
   --mhp-btn-primary-color: #fff;
-  --mhp-btn-primary-bg: #00a396;
-  --mhp-btn-primary-bg-hover: red;
+  --mhp-btn-primary-bg: seagreen;
+  --mhp-btn-primary-bg-hover: rgba(46, 139, 86, 0.87);
   --mhp-btn-secondary-color: #fff;
   --mhp-btn-secondary-bg: #1d1f22;
   --mhp-form-color: #1d1f22;
   --mhp-form-bg: #fff;
   --mhp-form-error-color: #d12727;
   --mhp-form-error-border: #d12727;
-  --mhp-form-border-focus-color: #00a396;
+  --mhp-form-border-focus-color: seagreen;
   --mhp-body-font-size: 1rem;
   --mhp-body-font-weight: 400;
   --mhp-h1-font-size: 1.5rem;

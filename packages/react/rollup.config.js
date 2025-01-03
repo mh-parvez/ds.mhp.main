@@ -5,16 +5,18 @@ module.exports = {
         'src/index.ts',
         'src/atoms/Button/index.ts',
         'src/atoms/Color/index.ts',
-        'src/atoms/Text/index.ts'
+        'src/atoms/Text/index.ts',
+        'src/atoms/Margin/index.ts',
+        'src/molecules/Select/index.ts'
     ],
     output: {
         dir: 'lib',
         format: 'esm',
         sourcemap: true,
-        preserveModules: true,
+        preserveModules: true, 
     },
     plugins: [
         TS()
     ],
-    external: ['react', '@ds.mhp/scss', "@ds.mhp/scss/lib/button.css", '@ds.mhp/foundation']
+    external: ['react', '@ds.mhp/scss', '@ds.mhp/foundation']
 }

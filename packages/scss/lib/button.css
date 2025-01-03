@@ -28,6 +28,7 @@
 /* Utility Colors */
 /* ============== Typography ============== */
 /* Font Families */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /* Font Sizes */
 /* Heading Font Sizes */
 /* Font Weights */
@@ -65,11 +66,11 @@
 }
 
 .btn-primary {
-  background-color: var(--mhp-btn-primary-bg-color, #00a396);
+  background-color: var(--mhp-btn-primary-bg-color, seagreen);
   color: var(--mhp-btn-primary-color, #fff);
 }
 
 .btn:hover {
-  background-color: var(--mhp-btn-primary-bg-hover, red);
+  background-color: var(--mhp-btn-primary-bg-hover, rgba(46, 139, 86, 0.87));
   color: black;
 }

@@ -1,15 +1,34 @@
+import { Button, Color, Text, Margin, Select } from "@ds.mhp/react/lib";
 import "./App.css";
-import { Button, Color, Text } from "@ds.mhp/react/lib";
+
+const colorOptions = [
+	{ label: 'Red', value: 'Red' },
+	{ label: 'Green', value: 'Green' },
+	{ label: 'Blue', value: 'Blue' },
+	{ label: 'Yellow', value: 'Yellow' },
+	{ label: 'Black', value: 'Black' },
+]
 
 const App = () => {
 	return (
-		<div>
-			<h1>Hello! MonoRepo</h1>
-			<Color hexcode="#ffffff" width='xxl' height='xxl'/>
-			<Text size="xl">Created by @mhp.dev</Text>
+		<div style={{ width: '500px' }}>
+
+			<Color hexcode="#0ff0f0" width='xxl' height='xxl' />
+			<Margin space='sm'>
+				<Text size="xl">Created by @mhp.dev</Text>
+			</Margin>
+
 			<Button title='monorepo button' onClick={() => alert("Hey 🔥")}>
 				Click Me!
 			</Button>
+
+			<Margin>
+				<Text> Select Component</Text>
+				<Margin top bottom space="xs">
+					<Select label="Select A Color" options={colorOptions} onOptionSelected={console.log} />
+				</Margin>
+				<Text>End of Select</Text>
+			</Margin>
 		</div>
 	);
 };
