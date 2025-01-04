@@ -7,13 +7,20 @@ interface SelectOption {
   value: string;
 }
 
+interface RenderOptionProps {
+  isSelected: boolean;
+  option: SelectOption;
+  getOptionRecommendedProps: (overrideProps?: Object) => Object;
+}
+
 interface SelectProps {
   label?: string;
   options?: Array<SelectOption>;
   onOptionSelected?: (options: SelectOption, optionIndex: number) => void;
+  renderOption?: (props: RenderOptionProps) => React.ReactNode;
 }
 
-const Select: React.FC<SelectProps> = ({ label = 'Please select an option', options = [], onOptionSelected }) => {
+const Select: React.FC<SelectProps> = ({ label = 'Please select an option', options = [], onOptionSelected, renderOption }) => {
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [overlayTop, setOverlayTop] = useState<number>(0);
@@ -49,7 +56,7 @@ const Select: React.FC<SelectProps> = ({ label = 'Please select an option', opti
         <Text> {
           selectedOption === null ? label : selectedOption.label
         }</Text>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`mhp-select__caret ${isOpen ? 'mhp-select__caret--open' : 'mhp-select__caret--close' }`} width={'1rem'} height={'1rem'}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`mhp-select__caret ${isOpen ? 'mhp-select__caret--open' : 'mhp-select__caret--close'}`} width={'1rem'} height={'1rem'}>
           <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
         </svg>
       </button>
@@ -62,8 +69,28 @@ const Select: React.FC<SelectProps> = ({ label = 'Please select an option', opti
 
                 const isSelected = selectedIndex === index;
 
+                const renderOptionProps: RenderOptionProps = {
+                  option,
+                  isSelected,
+                  getOptionRecommendedProps: (overrideProps = {}) => ({
+
+                    // here we will define default props
+                    key: option.value,
+                    className: `mhp-select__option ${isSelected ? 'mhp-select__option--selected' : ''}`,
+                    onClick: () => handleOptionClick(option, index),
+
+                    // here we will spreed override props (user given props)
+                    ...overrideProps
+                  })
+                };
+
+                if (renderOption) {
+                  return renderOption(renderOptionProps);
+                }
+
                 return (
-                  <li className={`mhp-select__option ${isSelected ? 'mhp-select__option--selected' : ''}`}
+                  <li
+                    className={`mhp-select__option ${isSelected ? 'mhp-select__option--selected' : ''}`}
                     key={option.value}
                     onClick={() => handleOptionClick(option, index)}
                   >
@@ -85,17 +112,3 @@ const Select: React.FC<SelectProps> = ({ label = 'Please select an option', opti
 }
 
 export default Select;
-
-/*
-Select Component Revel this API
-```````````````````````````````
-<Select
-    label= 'Please Select A Color'
-    options= {[
-        { label: 'Red', value: 'red' },
-        { label: 'Green', value: 'green' },
-        { label: 'Blue', value: 'blue' },
-    ]}
-    onOptionSelected = { console.log() }
-/>
-*/
