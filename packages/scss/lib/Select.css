@@ -108,6 +108,9 @@
   background-color: var(--mhp-form-bg-option-selected, seagreen);
   color: var(--mhp-form-color-option-selected, #fff);
 }
+.mhp-select__option--highlighted {
+  background-color: var(--mhp-form-bg-color-hover, #f1f2f3);
+}
 .mhp-select__option--selected:hover {
   background-color: var(--mhp-form-bg-option-selected, seagreen);
 }
